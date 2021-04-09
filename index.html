@@ -8,7 +8,7 @@
         <link rel="shortcut icon" href="/image/pnc_logo.png" type="image/x-icon">
         <link rel="stylesheet" href="css/app.css">
         <script src="/js/app.js" defer> </script>
-        <title>PNC REGISTERATION</title>
+        <title>Lyden Project: PNC-REGISTERATION</title>
     </head>
     <body>
         <!-- nav bar -->
@@ -21,12 +21,12 @@
                 <span class="fas fa-search"></span>
             </div>
             <form action="#">
-                <input type="search" class="search-data" placeholder="Search name" required>
+                <input type="search" class="search-data" placeholder="Search Name..." required>
                 <button type="submit" class="fas fa-search"></button>
             </form>
         </nav>
-        <!-- Form -->
         <div class="body-content">
+            <!-- Table container -->
             <div class="table-container">
                 <table>
                     <thead>
@@ -40,11 +40,20 @@
                     </thead>
                     <tbody>
                         <tr>
+                            <td>Theng Thon
+                            <td>2001-5-24</td>
+                            <td>thon.theng@student.passerellesnumeriques.org</td>
+                            <td>048</td>
+                            <td>Cambodia</td>
+                            <td class="btn-edit">Edit</td>
+                            <td class="btn-delete">Delete</td>
+                        </tr>
+                        <tr>
                             <td>Lyden CHAI</td>
                             <td>2001-03-01</td>
                             <td>lyden.chai@student.passerellesnumeriques.org</td>
                             <td>009</td>
-                            <td>Cambodia</td>
+                            <td>Thailand</td>
                             <td class="btn-edit">Edit</td>
                             <td class="btn-delete">Delete</td>
                         </tr>
@@ -61,10 +70,12 @@
                 </table>
             </div>
             <br>
+            <!-- Add button -->
             <div>
                 <button type="button" class="addbtn">+ADD</button>
             </div>
             <br>
+            <!-- Form container -->
             <div class="form-container">
                 <form action="#">
                     <div class="form-content">
@@ -82,10 +93,10 @@
                             <input type="number" id = "number"><br><br>
                             <select name="country" id="country">
                                 <option value="">Select Your Country</option>
-                                <option value="cambodia">Cambodia</option>
-                                <option value="thai">Thai</option>
-                                <option value="vietnam">VietName</option>
-                                <option value="usa">USA</option>
+                                <option value="Cambodia">Cambodia</option>
+                                <option value="Thailand">Thailand</option>
+                                <option value="Vietnam">Vietnam</option>
+                                <option value="USA">USA</option>
                             </select>
                         </div>
                     </div>

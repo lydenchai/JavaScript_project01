@@ -1,18 +1,24 @@
-// show form
-let showForm = document.querySelector('.addbtn');
+// show form when user click on button add
+const showForm = document.querySelector('.addbtn');
 showForm.addEventListener('click', e =>{
     let form = document.querySelector('.form-container');
     form.style.display = 'block';
+    // Hide table when click on button add
+    let hideTable = document.querySelector('.table-container');
+    hideTable.style.display = 'none';
 });
 
-// Hide form
-let hideForm = document.querySelector('#cencel');
+// Hide form when user click on button cancel
+const hideForm = document.querySelector('#cencel');
 hideForm.addEventListener('click', e =>{
     let cencel = document.querySelector('.form-container');
     cencel.style.display = 'none'
+    //Show table when click on button cancel
+    let hideTable = document.querySelector('.table-container');
+    hideTable.style.display = 'block';
 });
 
-// Search 
+// Search bar => only name
 const search = document.querySelector('.search-data');
 search.addEventListener('keyup', function (event){
     let text = search.value.toLowerCase();
@@ -27,7 +33,7 @@ search.addEventListener('keyup', function (event){
     }
 });
 
-// function send data
+// function send data to table 
 function sendData(event){
     event.preventDefault();
     let tbody = document.querySelector("tbody");
@@ -36,7 +42,7 @@ function sendData(event){
     let getEmail = document.querySelector('#email');
     let getID = document.querySelector('#number');
     let getCountry = document.querySelector('#country');
-    
+    // Check if user didn't complete form, user can't click on button update
     if (fullName.value === '' || getDate === '' || getEmail === "" || getID === '' || getCountry === ''){
         confirm("Please complet the form before update data!!!");
     }else{
@@ -63,11 +69,12 @@ function sendData(event){
         let td6 = document.createElement('td');
         td6.textContent = "Edit";
         td6.classList.add("btn-edit");
+
         //delete button
         let td7 = document.createElement('td');
         td7.textContent = "Delete";
         td7.classList.add("btn-delete");
-        //upload data
+        //upload data td
         tr.appendChild(td1);
         tr.appendChild(td2);
         tr.appendChild(td3);
@@ -77,15 +84,19 @@ function sendData(event){
         tr.appendChild(td7);
         tbody.appendChild(tr);  
     }
+    // When user click on update button form will hide
     let cencel = document.querySelector('.form-container');
     cencel.style.display = 'none'
+    // Show table when click on button update
+    let hideTable = document.querySelector('.table-container');
+    hideTable.style.display = 'block';
 }
 
 // Call function submit
 let send = document.querySelector('#submit');
 send.addEventListener('click', sendData);
 
-// Function delete items 
+// Function delete items: this function used to delete items on tabel
 function delet(event){
     let tbody = event.target.className;
     if(tbody === "btn-delete"){

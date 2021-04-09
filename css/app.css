@@ -5,6 +5,7 @@ body{
   height: auto;
   background: #f2f2f2;
 }
+/* header */
 nav{
   background: #171c24;
   display: flex;
@@ -15,7 +16,7 @@ nav{
   padding: 0 100px;
 }
 nav .nav-items{
-  margin-left: -630px;
+  margin-left: -600px;
   list-style: none;
 	padding: 0 15px;
 	color: #ffff;
@@ -69,6 +70,7 @@ nav .cancel-icon,
 nav .search-icon{
   display: none;
 }
+
 .logo{
   margin-left: -60px;
 }
@@ -86,22 +88,23 @@ nav .search-icon{
 .addbtn:hover{
   background: #3d99e4;
 }
+
+/* body */
 .body-content {
-  width: 80%;
+  width: 78%;
   margin: auto;
 }
-.tabel-container{
-  border: 1px solid#000;
-  padding: 15px;
-}
+
+/* Table content */
 table{
   border-collapse: collapse;
   width: 100%;
 }
 thead{
+  font-size: 20px;
   color: #ffff;
   font-weight: bold;
-  background: rgb(18, 185, 177);
+  background: rgb(18, 174, 185);
 }
 th, tr, td{
   padding: 10px;
@@ -112,11 +115,9 @@ p{
   display: flex;
   justify-content: space-evenly;
 }
-select{
-  padding: 10px;
-}
-#country{
-  border: 1px solid #6ea8e9;
+.tabel-container{
+  border: 1px solid#000;
+  padding: 15px;
 }
 .table-container{
   box-shadow: 0 4px 4px 1px rgba(0, 0, 0, 0.2);
@@ -127,6 +128,7 @@ select{
   font-family: Open Sans;
   background-color: white;
 }
+/* Form content */
 .form-content {
   display: flex;
   justify-content: space-between;
@@ -140,6 +142,12 @@ select{
   width: 10%;
   font-size: 17px;
 }
+select{
+  padding: 10px;
+}
+#country{
+  border: 1px solid #6ea8e9;
+}
 .form-input {
   margin-right: 10px;
   width: 80%;
@@ -148,55 +156,55 @@ select{
   display: flex;
 }
 .btn-edit{
-font-weight: bold;
-cursor: pointer;
-border-radius: 5px;
-color: rgb(39, 120, 226);
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  color: rgb(39, 120, 226);
 }
 .btn-delete{
-cursor: pointer;
-font-weight: bold;
-border-radius: 5px;
-color: rgb(226, 39, 39);
-border-radius: 2px;
-padding: 2px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+  color: rgb(226, 39, 39);
+  border-radius: 2px;
+  padding: 2px;
 }
 input[type="text"], 
 input[type="date"],
 input[type="email"],
 input[type="number"]{
-    width: 100%;
-    box-sizing: border-box;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 input[type="submit"]{
-    width: 70px;
-    margin: 10px;
-    height: 40px;
-    border: none;
-    outline: none;
-    color: #ffff;
-    text-align: center;
-    border-radius: 5px;
-    background: rgb(33, 182, 53);
+  width: 70px;
+  margin: 10px;
+  height: 40px;
+  border: none;
+  outline: none;
+  color: #ffff;
+  text-align: center;
+  border-radius: 5px;
+  background: rgb(33, 182, 53);
 }
 input[type="reset"]{
-    width: 70px;
-    margin: 10px;
-    height: 40px;
-    border: none;
-    outline: none;
-    color: #ffff;
-    text-align: center;
-    border-radius: 5px;
-    background: rgb(212, 48, 48);
+  width: 70px;
+  margin: 10px;
+  height: 40px;
+  border: none;
+  outline: none;
+  color: #ffff;
+  text-align: center;
+  border-radius: 5px;
+  background: rgb(212, 48, 48);
 }
 input[type="submit"]:hover{
-    background:#29dd6e;
+  background:#29dd6e;
 }
 input[type="reset"]:hover{
   background: rgb(231, 74, 74);
