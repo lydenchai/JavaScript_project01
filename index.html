@@ -5,21 +5,23 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <link rel="shortcut icon" href="/image/pnc_logo.png" type="image/x-icon">
         <link rel="stylesheet" href="css/app.css">
-        <title>Lyden JS Project </title>
+        <script src="/js/app.js" defer> </script>
+        <title>PNC REGISTERATION</title>
     </head>
     <body>
         <!-- nav bar -->
         <nav>
+            <img src="/image/PN-Logo-pndotcom.png" class="logo" alt="">
             <div class="nav-items">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Registration</a></li>
+                REGISTERATION
             </div>
             <div class="search-icon">
                 <span class="fas fa-search"></span>
             </div>
             <form action="#">
-                <input type="search" class="search-data" placeholder="Search" required>
+                <input type="search" class="search-data" placeholder="Search name" required>
                 <button type="submit" class="fas fa-search"></button>
             </form>
         </nav>
@@ -38,8 +40,8 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Lyden </td>
-                            <td>01/01/2021</td>
+                            <td>Lyden CHAI</td>
+                            <td>2001-03-01</td>
                             <td>lyden.chai@student.passerellesnumeriques.org</td>
                             <td>009</td>
                             <td>Cambodia</td>
@@ -47,17 +49,8 @@
                             <td class="btn-delete">Delete</td>
                         </tr>
                         <tr>
-                            <td>Kimsak</td>
-                            <td>02/02/2021</td>
-                            <td>kimsa.mean@student.passerellesnumeriques.org</td>
-                            <td>026</td>
-                            <td>Cambodia</td>
-                            <td class="btn-edit">Edit</td>
-                            <td class="btn-delete">Delete</td>
-                        </tr> 
-                        <tr>
-                            <td>Lyheang</td>
-                            <td>03/03/2021</td>
+                            <td>Lyheang CHEM</td>
+                            <td>2001-11-15</td>
                             <td>lyheang.chem@student.passerellesnumeriques.org</td>
                             <td>012</td>
                             <td>Cambodia</td>
@@ -68,6 +61,9 @@
                 </table>
             </div>
             <br>
+            <div>
+                <button type="button" class="addbtn">+ADD</button>
+            </div>
             <br>
             <div class="form-container">
                 <form action="#">
@@ -95,10 +91,10 @@
                     </div>
                     <div class="button">
                         <input type="submit" value = "UPDATE" id="submit">
-                        <input type="reset" value = "CANCEL">
+                        <input type="reset" value = "CANCEL" id="cencel">
                     </div>
                 </form>
             </div>            
-        <script src="/js/app.js"></script>
+        </div>
     </body>
 </html>
