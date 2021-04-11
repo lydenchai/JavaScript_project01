@@ -7,21 +7,21 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
         <link rel="shortcut icon" href="image/pnc_logo.png" type="image/x-icon">
         <link rel="stylesheet" href="css/app.css">
-        <script src="js/app.js" defer> </script>
-        <title>Lyden Project: PNC-REGISTERATION</title>
+        <script src="js/app.js" defer></script>
+        <title>Lyden Project: PNC-ATTENDANCE</title>
     </head>
     <body>
         <!-- nav bar -->
         <nav>
             <img src="image/PN-Logo-pndotcom.png" class="logo" alt="">
             <div class="nav-items">
-                REGISTERATION
+                ATTENDANCE LIST
             </div>
             <div class="search-icon">
                 <span class="fas fa-search"></span>
             </div>
             <form action="#">
-                <input type="search" class="search-data" placeholder="Search Name..." required>
+                <input type="search" class="search-data" placeholder="Search Name...">
                 <button type="submit" class="fas fa-search"></button>
             </form>
         </nav>
@@ -34,35 +34,53 @@
                         <th>Birthday</th>
                         <th>Email</th>
                         <th>ID</th>
-                        <th>Country</th>
+                        <th>Class</th>
                         <th></th>
                         <th></th>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Theng Thon
-                            <td>2001-5-24</td>
+                            <td>Theng Thon</td>
+                            <td>2001-05-24</td>
                             <td>thon.theng@student.passerellesnumeriques.org</td>
                             <td>048</td>
-                            <td>Cambodia</td>
+                            <td>WEB-A 2021</td>
                             <td class="btn-edit">Edit</td>
                             <td class="btn-delete">Delete</td>
                         </tr>
                         <tr>
-                            <td>Lyden CHAI</td>
+                            <td>Lyden Chai</td>
                             <td>2001-03-01</td>
                             <td>lyden.chai@student.passerellesnumeriques.org</td>
                             <td>009</td>
-                            <td>Thailand</td>
+                            <td>WEB-A 2021</td>
                             <td class="btn-edit">Edit</td>
                             <td class="btn-delete">Delete</td>
                         </tr>
                         <tr>
-                            <td>Lyheang CHEM</td>
+                            <td>Lyheang Chem</td>
                             <td>2001-11-15</td>
                             <td>lyheang.chem@student.passerellesnumeriques.org</td>
                             <td>012</td>
-                            <td>Cambodia</td>
+                            <td>WEB-A 2021</td>
+                            <td class="btn-edit">Edit</td>
+                            <td class="btn-delete">Delete</td>
+                        </tr>
+                        <tr>
+                            <td>Thin Chrang</td>
+                            <td>2000-04-03</td>
+                            <td>chrang.thin@student.passerellesnumeriques.org</td>
+                            <td>075</td>
+                            <td>WEB-B 2021</td>
+                            <td class="btn-edit">Edit</td>
+                            <td class="btn-delete">Delete</td>
+                        </tr>
+                        <tr>
+                            <td>Sokthang Prob</td>
+                            <td>2000-03-10</td>
+                            <td>sokthang.prob@student.passerellesnumeriques.org</td>
+                            <td>064</td>
+                            <td>SNA-2021</td>
                             <td class="btn-edit">Edit</td>
                             <td class="btn-delete">Delete</td>
                         </tr> 
@@ -84,25 +102,28 @@
                             <label>Birthday</label><br><br><br>
                             <label>Email</label><br><br><br>
                             <label>ID</label><br><br><br>
-                            <label for="country">Country</label><br>
+                            <label for="class">Class</label><br>
                         </div>
                         <div class="form-input"> 
                             <input type="text" id = "fullName">
                             <input type="date" id="date">
                             <input type="email" id = "email">
                             <input type="number" id = "number"><br><br>
-                            <select name="country" id="country">
-                                <option value="">Select Your Country</option>
-                                <option value="Cambodia">Cambodia</option>
-                                <option value="Thailand">Thailand</option>
-                                <option value="Vietnam">Vietnam</option>
-                                <option value="USA">USA</option>
+                            <select name="Class" id="class">
+                                <option value="">Select Your Class</option>
+                                <option value="WEB-A 2021">WEB-A 2021</option>
+                                <option value="WEB-B 2021">WEB-B 2021</option>
+                                <option value="SNA-2021">SNA-2021</option>
+                                <option value="2022 A">2022 A</option>
+                                <option value="2022 B">2022 B</option>
+                                <option value="2022 C">2022 C</option>
                             </select>
                         </div>
                     </div>
                     <div class="button">
-                        <input type="submit" value = "UPDATE" id="submit">
-                        <input type="reset" value = "CANCEL" id="cencel">
+                        <input type="button" value = "SUBMIT" id="submit">
+                        <input type="button" value = "UPDATE" id="update">
+                        <input type="button" value = "CANCEL" id="cancel">
                     </div>
                 </form>
             </div>            
